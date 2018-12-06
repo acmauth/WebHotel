@@ -1,0 +1,102 @@
+/* Reset everything */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END OF RESET */
+
+body {
+    font-family: 'Cinzel', serif;
+}
+
+/* Header and navigation */
+
+header {
+    align-items: center;
+    background-color: #012A36;
+    display: flex;
+    height: auto; width: 100%;
+}
+
+header h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 60px;
+}
+
+nav li {
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.3rem;
+    margin-left: 20px;
+    height: 60px;
+    padding: 10px;
+}
+
+nav li:hover {
+    background-color: #FF0046;
+    transition: .3s;
+}
+
+/* We use this container so the logo can be interacted white as a whole.
+    Both the icon and the h1 */
+#logo_container {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+}
+
+#logo {
+    height: 40px; width: auto;
+    margin: 20px;
+}
